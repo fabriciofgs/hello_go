@@ -27,9 +27,10 @@ func main(){
 	that when called, will return run the helloFunction. */ 
 	router.GET("/hello", helloFunction)
 
+	printCoolASCIIArt()
+	
 	// var err error is to catch any errors that the api can return.
 	// router.Run() is the command that will start the rest api on the background
-	printCoolASCIIArt()
 	var err error = router.Run()
 	// If the Server return any variable of the error type,
 	// it will be catched by this if statement and log an error on the CMD
