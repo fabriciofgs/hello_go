@@ -11,7 +11,7 @@ import (
 func main(){
 	// Create a Gin router with default middleware (logger and recovery)
 	var router *gin.Engine = gin.Default()
-  // Example of a condensed endpoint
+  // Example of a condensed endpoint. Only for demonstration, check the other example that start on line 22
 	router.GET("/ping", func(c *gin.Context) {
 		// Return JSON response
 		c.JSON(http.StatusOK, gin.H{
